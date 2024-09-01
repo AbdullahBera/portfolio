@@ -71,31 +71,31 @@ export async function getStaticProps() {
     props: {
       albums: [
         {
-          title: "Graffiti Alley - 2022",
+          title: "Graffiti Alley",
           path: "/photos/ghent",
           files: belgiumAlbum,
           location: "Ghent, Belgium",
         },
         {
-          title: "III. Terwestenweg - 2022",
+          title: "III. Terwestenweg",
           path: "/photos/dusseldorf",
           files: dusseldorfAlbum,
           location: "Essen, Germany",
         },
         {
-          title: "Stan's Beach - 2024",
+          title: "Stan's Beach",
           path: "/photos/san_diego",
           files: san_diegoAlbum,
           location: "San Diego, CA",
         },
         {
-          title: "Galata Bridge - 2022",
+          title: "Galata Bridge",
           path: "/photos/istanbul",
           files: istanbulAlbum,
           location: "Istanbul, Turkey",
         },
         {
-          title: "English Garden - 2024",
+          title: "English Garden",
           path: "/photos/munich",
           files: munichAlbum,
           location: "Munich, Germany",
