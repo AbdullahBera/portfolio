@@ -58,12 +58,13 @@ function AlbumCard({
 }
 
 export async function getStaticProps() {
-  const [uskudarAlbum, cucamongaAlbum, veniceAlbum, uscAlbum] =
+  const [belgiumAlbum, dusseldorfAlbum, san_diegoAlbum, munichAlbum, istanbulAlbum] =
     await Promise.all([
-      readdirSync("public/photos/uskudar"),
-      readdirSync("public/photos/cucamonga"),
-      readdirSync("public/photos/venice"),
-      readdirSync("public/photos/usc"),
+      readdirSync("public/photos/ghent"),
+      readdirSync("public/photos/dusseldorf"),
+      readdirSync("public/photos/san_diego"),
+      readdirSync("public/photos/munich"),
+      readdirSync("public/photos/istanbul")
     ]);
 
   return {
@@ -71,26 +72,32 @@ export async function getStaticProps() {
       albums: [
         {
           title: "A Window from Uskudar to Sultanahmet",
-          path: "/photos/uskudar",
-          files: uskudarAlbum,
-          location: "Istanbul, Turkey",
+          path: "/photos/ghent",
+          files: belgiumAlbum,
+          location: "Ghent, Belgium",
         },
         {
           title: "The Ivy from the Magic Beans",
-          path: "/photos/cucamonga",
-          files: cucamongaAlbum,
+          path: "/photos/dusseldorf",
+          files: dusseldorfAlbum,
           location: "Rancho Cucamonga, CA",
         },
         {
           title: "LA in Golden Hour",
-          path: "/photos/venice",
-          files: veniceAlbum,
+          path: "/photos/san_diego",
+          files: san_diegoAlbum,
           location: "Venice, CA",
         },
         {
           title: "A USC Sunrise Before COVID",
-          path: "/photos/usc",
-          files: uscAlbum,
+          path: "/photos/istanbul",
+          files: istanbulAlbum,
+          location: "Los Angeles, CA",
+        },
+        {
+          title: "A USC Sunrise Before COVID",
+          path: "/photos/munich",
+          files: munichAlbum,
           location: "Los Angeles, CA",
         },
       ],

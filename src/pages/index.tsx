@@ -7,29 +7,29 @@ export default function Home() {
       <Navigation />
       <section className={"max-w-3xl px-5 py-8 mx-auto"}>
         <p className="text-lg tracking-normal text-gray-600 font-light animate-in">
-          I am currently pursuing my Masters in Data Science.
+          I am currently exploring various RAG models.
         </p>
         <p className="pt-8 text-lg tracking-normal text-gray-600 font-extralight leading-loose">
           My interests span across{" "}
           <span className="font-light">
-            distributed systems, LLMs, and cryptography
+            machine learning, LLMs, and causal inference
           </span>
-          . I am doing my master&apos;s of computer science at the University of
-          Southern California. Previosuly, I led technical at{" "}
+          . I am doing my master&apos;s of data science at the University of
+          San Francisco. Previosuly, I worked as a product data analyst at{" "}
           <a
             className="font-light"
-            href="https://joinhaven.io"
+            href="https://www.spacture.ai"
             rel="noreferrer"
           >
-            Haven
+            Spactur AI
           </a>
-          , was in zone infra at{" "}
-          <a className="font-light" href="https://getir.com" rel="noreferrer">
-            Getir
+          , data analyst{" "}
+          <a className="font-light" href="https://www.reqora.com/" rel="noreferrer">
+            Reqora
           </a>{" "}
-          , founding team at{" "}
-          <a className="font-light" href="https://ethsign.xyz" rel="noreferrer">
-            EthSign
+          , operations analyst{" "}
+          <a className="font-light" href="https://www.instagram.com/tryfeedapp/?hl=en" rel="noreferrer">
+            Feed
           </a>
           , and more.
         </p>
