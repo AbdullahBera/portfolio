@@ -7,7 +7,7 @@ export default function Home() {
       <Navigation />
       <section className={"max-w-3xl px-5 py-8 mx-auto"}>
         <p className="text-lg tracking-normal text-gray-600 font-light animate-in">
-          I am currently doing reseach on decentralized AI agents.
+          I am currently pursuing my Masters in Data Science.
         </p>
         <p className="pt-8 text-lg tracking-normal text-gray-600 font-extralight leading-loose">
           My interests span across{" "}
