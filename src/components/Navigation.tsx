@@ -42,7 +42,7 @@ export default function Navigation() {
       </nav>
       {pathname === "/" ? (
         <h3 className="pt-3 lg:pt-6 font-extralight text-gray-600 text-sm">
-          distsys and design lover
+          step by step ferociously
         </h3>
       ) : null}
     </section>
