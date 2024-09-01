@@ -71,34 +71,34 @@ export async function getStaticProps() {
     props: {
       albums: [
         {
-          title: "A Window from Uskudar to Sultanahmet",
+          title: "Graffiti Alley - 2022",
           path: "/photos/ghent",
           files: belgiumAlbum,
           location: "Ghent, Belgium",
         },
         {
-          title: "The Ivy from the Magic Beans",
+          title: "III. Terwestenweg - 2022",
           path: "/photos/dusseldorf",
           files: dusseldorfAlbum,
-          location: "Rancho Cucamonga, CA",
+          location: "Essen, Germany",
         },
         {
-          title: "LA in Golden Hour",
+          title: "Stan's Beach - 2024",
           path: "/photos/san_diego",
           files: san_diegoAlbum,
-          location: "Venice, CA",
+          location: "San Diego, CA",
         },
         {
-          title: "A USC Sunrise Before COVID",
+          title: "Galata Bridge - 2022",
           path: "/photos/istanbul",
           files: istanbulAlbum,
-          location: "Los Angeles, CA",
+          location: "Istanbul, Turkey",
         },
         {
-          title: "A USC Sunrise Before COVID",
+          title: "English Garden - 2024",
           path: "/photos/munich",
           files: munichAlbum,
-          location: "Los Angeles, CA",
+          location: "Munich, Germany",
         },
       ],
     },
