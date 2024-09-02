@@ -13,6 +13,16 @@ export default function Projects() {
       <Navigation />
       <section className={"max-w-3xl px-5 py-8 mx-auto"}>
         <ul className="text-base tracking-normal text-gray-600 font-light space-y-6">
+        <ProjectCardListItem
+            title="Cardiovascular Disease (work in progress)"
+            description="An exploratory analysis of people with cardiovascular disease."
+            codeRepo="https://github.com/AbdullahBera/heart-attack-analysis?tab=readme-ov-file"
+          />
+          <ProjectCardListItem
+            title="Magic Recipe Generator (work in progress)"
+            description="A magic recipe generator based on the Harry Potter Series."
+            codeRepo="https://github.com/AbdullahBera/ai-magic-recipe-generator"
+          />
           <ProjectCardListItem
             title="Disaster Tweet"
             description="A machine learning model that helps classify Tweets that mean a disaster and those that don't."
@@ -22,16 +32,6 @@ export default function Projects() {
             title="Credit Risk"
             description="Tested several machine learning models to predict the credit risk of people seeking loans."
             codeRepo="https://github.com/AbdullahBera/Credit_Risk_Analysis"
-          />
-          <ProjectCardListItem
-            title="Cardiovascular Disease"
-            description="An exploratory analysis of people with cardiovascular disease."
-            codeRepo="https://github.com/AbdullahBera/heart-attack-analysis?tab=readme-ov-file"
-          />
-          <ProjectCardListItem
-            title="Magic Recipe Generator"
-            description="A magic recipe generator based on the Harry Potter Series."
-            codeRepo="https://github.com/AbdullahBera/ai-magic-recipe-generator"
           />
         </ul>
       </section>
