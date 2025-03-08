@@ -16,8 +16,8 @@ export default function Photography({
     <main className="bg-white text-black min-h-screen lg:p-24 selection:text-pink-600">
       <Navigation />
 
-      <section className={"max-w-3xl px-5 py-8 mx-auto"}>
-        <div className="flex flex-col items-center space-y-12">
+      <section className={"max-w-3xl px-5 mx-auto"}>
+        <div className="flex flex-col space-y-12 py-4">
           {albums.map((album, index) => (
             <AlbumCard album={album} key={index} />
           ))}
@@ -38,21 +38,23 @@ function AlbumCard({
   };
 }) {
   return (
-    <div className="">
-      <h2 className="text-gray-700">{album.title}</h2>
-      <p className="text-gray-700 text-xs font-extralight pb-2">
+    <div>
+      <h2 className="text-gray-700 pl-2.5">{album.title}</h2>
+      <p className="text-gray-700 text-xs font-extralight pb-2 pl-2.5">
         {album.location}
       </p>
-      {album.files.map((file, index) => (
-        <Image
-          className="pt-2"
-          key={index}
-          src={`${album.path}/${file}`}
-          width={450}
-          height={450}
-          alt=""
-        />
-      ))}
+      <div className="flex flex-col pl-2.5">
+        {album.files.map((file, index) => (
+          <Image
+            className="pt-2"
+            key={index}
+            src={`${album.path}/${file}`}
+            width={450}
+            height={450}
+            alt=""
+          />
+        ))}
+      </div>
     </div>
   );
 }
