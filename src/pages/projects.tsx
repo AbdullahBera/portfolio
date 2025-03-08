@@ -40,8 +40,7 @@ export default function Projects() {
     </main>
   );
 }
-
-function ProjectCardListItem({
+function ProjectCardListItem({s
   title,
   description,
   codeRepo,
