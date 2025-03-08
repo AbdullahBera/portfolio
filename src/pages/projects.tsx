@@ -13,7 +13,7 @@ export default function Projects() {
       <Navigation />
       <section className={"max-w-3xl px-5 mx-auto"}>
         <ul className="py-4 text-base tracking-normal text-gray-600 font-light space-y-6">
-        <ProjectCardListItem
+          <ProjectCardListItem
             title="Cardiovascular Disease (work in progress)"
             description="An exploratory analysis of people with cardiovascular disease."
             codeRepo="https://github.com/AbdullahBera/heart-attack-analysis?tab=readme-ov-file"
@@ -25,7 +25,7 @@ export default function Projects() {
           />
           <ProjectCardListItem
             title="Disaster Tweet"
-            description="A machine learning model that helps classify Tweets that mean a disaster and those that don't."
+            description="A machine learning model that helps classify Tweets that mean a disaster and those that don&apos;t."
             codeRepo="https://github.com/AbdullahBera/disaster-tweets"
           />
           <ProjectCardListItem
@@ -40,7 +40,7 @@ export default function Projects() {
     </main>
   );
 }
-function ProjectCardListItem({s
+function ProjectCardListItem({
   title,
   description,
   codeRepo,
