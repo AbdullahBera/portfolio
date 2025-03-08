@@ -3,7 +3,7 @@ import Contact from "@/components/Contact";
 import Navigation from "@/components/Navigation";
 import { formatAndReturnWritings } from "@/lib/docs";
 
-export default function Writing(
+export default function WritingPage(
   {
     writings,
   }: {
@@ -21,8 +21,7 @@ export default function Writing(
   return (
     <main className="selection:text-pink-600 bg-white text-black min-h-screen lg:p-24">
       <Navigation />
-      <section className={"max-w-3xl px-5 py-10 mx-auto text-gray-600"}>
-        <h2 className="text-lg font-bold text-gray-700">Opinions</h2>
+      <section className={"max-w-3xl mx-auto px-5 text-gray-600"}>
         <ul className="py-4 text-base tracking-normal space-y-2">
           {writings
             .sort((a, b) => {
@@ -35,9 +34,9 @@ export default function Writing(
               <li key={index}>
                 <Link
                   href={`/writing/${w.metadata.slug}`}
-                  className="block py-3 -mx-4 px-4 hover:bg-gray-50 rounded-sm font-light"
+                  className="block py-3 hover:bg-gray-50 rounded-sm font-light"
                 >
-                  <div className="flex justify-between">
+                  <div className="flex justify-between pl-2.5 pr-4">
                     <h4 className="text-base">{w.metadata.title}</h4>
                     <p className="text-sm whitespace-nowrap">
                       {w.metadata.date}

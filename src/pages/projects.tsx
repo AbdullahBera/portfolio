@@ -11,8 +11,8 @@ export default function Projects() {
   return (
     <main className="selection:text-pink-600 bg-white text-black min-h-screen lg:p-24">
       <Navigation />
-      <section className={"max-w-3xl px-5 py-8 mx-auto"}>
-        <ul className="text-base tracking-normal text-gray-600 font-light space-y-6">
+      <section className={"max-w-3xl px-5 mx-auto"}>
+        <ul className="py-4 text-base tracking-normal text-gray-600 font-light space-y-6">
         <ProjectCardListItem
             title="Cardiovascular Disease (work in progress)"
             description="An exploratory analysis of people with cardiovascular disease."
@@ -52,7 +52,7 @@ function ProjectCardListItem({
 }) {
   return (
     <li className="group">
-      <div className="flex items-center gap-x-3">
+      <div className="flex items-center gap-x-3 pl-2.5">
         <h3 className="font-normal">{title}</h3>
         <a
           href={codeRepo}
@@ -63,7 +63,7 @@ function ProjectCardListItem({
           <GitHubLogoIcon className="w-4 h-4" />
         </a>
       </div>
-      <p className="font-extralight">{description}</p>
+      <p className="font-extralight pl-2.5">{description}</p>
     </li>
   );
 }

@@ -7,7 +7,7 @@ import {
 export default function Contact() {
   return (
     <section className={"max-w-3xl px-5 py-8 mx-auto"}>
-      <div className="flex gap-x-4">
+      <div className="flex gap-x-4 pl-2.5">
         <a href="https://github.com/AbdullahBera" target="_blank">
           <GitHubLogoIcon className="w-6 h-6 text-gray-600 hover:text-gray-800 transition-all hover:cursor-pointer hover:rotate-3" />
         </a>
