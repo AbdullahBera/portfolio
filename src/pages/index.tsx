@@ -6,7 +6,7 @@ export default function Home() {
     <main className="selection:text-pink-600 bg-white text-black min-h-screen lg:p-24 bg-transparent">
       <Navigation />
       <section className={"max-w-3xl px-5 py-8 mx-auto"}>
-        <h1 className="text-3xl font-medium mb-8 pl-2.5">hey, I&apos;m Bera 👋</h1>
+        <h1 className="text-3xl font-medium mb-8 pl-2.5">hey, I&apos;m abdullah bera 👋</h1>
         <p className="text-lg tracking-normal text-gray-600 font-light animate-in pl-2.5">
           I am currently exploring various RAG models and AI agents.
         </p>
