@@ -51,18 +51,18 @@ function ProjectCardListItem({
 }) {
   return (
     <li className="group">
-      <div className="flex items-center gap-x-3 pl-2.5">
-        <h3 className="font-normal">{title}</h3>
-        <a
-          href={codeRepo}
-          rel="noreferrer"
-          target="_blank"
-          className="group-hover:hover:text-pink-600 transition-colors hover:cursor-pointer"
-        >
-          <GitHubLogoIcon className="w-4 h-4" />
-        </a>
-      </div>
-      <p className="font-extralight pl-2.5">{description}</p>
+      <a
+        href={codeRepo}
+        rel="noreferrer"
+        target="_blank"
+        className="block hover:cursor-pointer p-2.5 rounded-md hover:bg-gray-50 transition-colors"
+      >
+        <div className="flex items-center gap-x-3">
+          <h3 className="font-normal group-hover:text-pink-600 transition-colors">{title}</h3>
+          <GitHubLogoIcon className="w-4 h-4 group-hover:text-pink-600 transition-colors" />
+        </div>
+        <p className="font-extralight">{description}</p>
+      </a>
     </li>
   );
 }
