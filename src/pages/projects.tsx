@@ -14,9 +14,10 @@ export default function Projects() {
       <section className={"max-w-3xl px-5 mx-auto"}>
         <ul className="py-4 text-base tracking-normal text-gray-600 font-light space-y-6">
           <ProjectCardListItem
-            title="Cardiovascular Disease (work in progress)"
-            description="An exploratory analysis of people with cardiovascular disease."
+            title="Cardiovascular Disease"
+            description="A machine learning-powered Streamlit app that predicts cardiovascular disease risk."
             codeRepo="https://github.com/AbdullahBera/heart-attack-analysis?tab=readme-ov-file"
+            demoLink="https://heart-attack-analysis-predict.streamlit.app/"
           />
           <ProjectCardListItem
             title="Magic Recipe Generator (work in progress)"
@@ -44,25 +45,40 @@ function ProjectCardListItem({
   title,
   description,
   codeRepo,
+  demoLink,
 }: {
   title: string;
   description: string;
   codeRepo: string;
+  demoLink?: string;
 }) {
   return (
     <li className="group">
-      <a
-        href={codeRepo}
-        rel="noreferrer"
-        target="_blank"
-        className="block hover:cursor-pointer p-2.5 rounded-md hover:bg-gray-50 transition-colors"
-      >
+      <div className="p-2.5 rounded-md hover:bg-gray-50 transition-colors">
         <div className="flex items-center gap-x-3">
-          <h3 className="font-normal group-hover:text-pink-600 transition-colors">{title}</h3>
-          <GitHubLogoIcon className="w-4 h-4 group-hover:text-pink-600 transition-colors" />
+          {demoLink ? (
+            <a
+              href={demoLink}
+              rel="noreferrer"
+              target="_blank"
+              className="font-normal hover:text-pink-600 transition-colors hover:cursor-pointer"
+            >
+              {title}
+            </a>
+          ) : (
+            <h3 className="font-normal">{title}</h3>
+          )}
+          <a
+            href={codeRepo}
+            rel="noreferrer"
+            target="_blank"
+            className="hover:cursor-pointer"
+          >
+            <GitHubLogoIcon className="w-4 h-4 hover:text-pink-600 transition-colors" />
+          </a>
         </div>
         <p className="font-extralight">{description}</p>
-      </a>
+      </div>
     </li>
   );
 }
