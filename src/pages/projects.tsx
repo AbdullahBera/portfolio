@@ -20,11 +20,6 @@ export default function Projects() {
             demoLink="https://heart-attack-analysis-predict.streamlit.app/"
           />
           <ProjectCardListItem
-            title="Magic Recipe Generator (work in progress)"
-            description="A magic recipe generator based on the Harry Potter Series."
-            codeRepo="https://github.com/AbdullahBera/ai-magic-recipe-generator"
-          />
-          <ProjectCardListItem
             title="Disaster Tweet"
             description="A machine learning model that helps classify Tweets that mean a disaster and those that don&apos;t."
             codeRepo="https://github.com/AbdullahBera/disaster-tweets"
