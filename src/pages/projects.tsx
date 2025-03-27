@@ -20,6 +20,11 @@ export default function Projects() {
             demoLink="https://heart-attack-analysis-predict.streamlit.app/"
           />
           <ProjectCardListItem
+            title="Hotel Booking"
+            description="An end-to-end machine learning model that predicts hotel booking and cancelations cancellations."
+            codeRepo="https://github.com/AbdullahBera/case"
+          />
+          <ProjectCardListItem
             title="Disaster Tweet"
             description="A machine learning model that helps classify Tweets that mean a disaster and those that don&apos;t."
             codeRepo="https://github.com/AbdullahBera/disaster-tweets"
